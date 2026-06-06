@@ -2,32 +2,29 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Registro - DONA-CHAIN (Demo)</title>
+    <title>Registro - DONA-CHAIN</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-        <a class="navbar-brand" href="/index.html">DONA-CHAIN</a>
+        <a class="navbar-brand" href="index.html">DONA-CHAIN</a>
         <div class="navbar-nav ms-auto">
-            <a class="nav-link" href="/index.html">Inicio</a>
-            <a class="nav-link" href="/login.html">Ingresar</a>
+            <a class="nav-link" href="index.html">Inicio</a>
+            <a class="nav-link" href="login.html">Ingresar</a>
         </div>
     </div>
 </nav>
 
 <div class="container mt-5" style="max-width: 500px;">
-    <div class="alert alert-warning text-center">
-        <i class="fas fa-info-circle"></i> Versión demostrativa – El registro real requiere backend Node.js.
-    </div>
     <div class="card shadow">
         <div class="card-header bg-success text-white">
-            <h3 class="mb-0"><i class="fas fa-user-plus"></i> Registro de Usuario (Demo)</h3>
+            <h3 class="mb-0"><i class="fas fa-user-plus"></i> Registro de Usuario</h3>
         </div>
         <div class="card-body">
-            <form id="registerForm" onsubmit="event.preventDefault(); alert('Versión demostrativa. El sistema completo con blockchain requiere backend Node.js.')">
+            <form id="registerForm" onsubmit="event.preventDefault(); alert('Demostración: El sistema completo con blockchain requiere backend Node.js.')">
                 <div class="mb-3">
                     <label class="form-label">Nombre completo</label>
                     <input type="text" id="nombre" class="form-control" placeholder="Juan Pérez" required>
@@ -40,20 +37,24 @@
                     <label class="form-label">Contraseña</label>
                     <input type="password" id="password" class="form-control" placeholder="********" required>
                 </div>
-                <button type="submit" class="btn btn-success w-100"><i class="fas fa-check-circle"></i> Registrarse (Demo)</button>
+                <button type="submit" class="btn btn-success w-100"><i class="fas fa-check-circle"></i> Registrarse</button>
             </form>
             <div class="text-center mt-3">
-                <a href="/login.html" class="btn btn-link">¿Ya tienes cuenta? Inicia sesión</a>
+                <a href="login.html" class="btn btn-link">¿Ya tienes cuenta? Inicia sesión</a>
             </div>
             <div class="text-center mt-2">
-                <a href="/index.html" class="btn btn-secondary btn-sm"><i class="fas fa-arrow-left"></i> Volver al inicio</a>
+                <a href="index.html" class="btn btn-secondary btn-sm"><i class="fas fa-arrow-left"></i> Volver al inicio</a>
             </div>
         </div>
     </div>
 </div>
 
-<footer class="text-center mt-5 py-3 bg-light">
-    <p>DONA-CHAIN &copy; 2026 - Demostración de interfaz</p>
+<footer class="text-center mt-5 py-3 bg-dark text-white">
+    <p>DONA-CHAIN &copy; 2026 - Transparencia y trazabilidad con blockchain</p>
+    <p>
+        <a href="verify.html" class="text-white">Verificar donación</a> | 
+        <a href="index.html" class="text-white">Campañas activas</a>
+    </p>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
