@@ -35,6 +35,35 @@
             text-decoration: none;
             display: inline-block;
         }
+        .link-iconos {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .link-iconos a {
+            text-align: center;
+            text-decoration: none;
+            color: #2c3e50;
+            transition: transform 0.2s;
+        }
+        .link-iconos a:hover {
+            transform: translateY(-5px);
+        }
+        .link-iconos i {
+            font-size: 48px;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .link-iconos span {
+            font-size: 14px;
+            font-weight: bold;
+        }
         @media (max-width: 768px) {
             .campaign-img { width: 100%; height: auto; margin-bottom: 10px; margin-right: 0; }
             .campaign-row { flex-direction: column; text-align: center; }
@@ -54,14 +83,36 @@
     </nav>
 
     <div class="container mt-4">
-        <div class="alert alert-info text-center">
-            <i class="fas fa-info-circle"></i> <strong>Versión demostrativa</strong> – El sistema completo (registro, login, donaciones, blockchain) requiere un servidor Node.js. 
-            <a href="https://github.com/TU_USUARIO/dona-chain" target="_blank" class="alert-link">Ver código fuente completo</a>
+        <!-- Iconos de acceso rápido -->
+        <div class="link-iconos">
+            <a href="/login.html">
+                <i class="fas fa-sign-in-alt text-primary"></i>
+                <span>Iniciar Sesión</span>
+            </a>
+            <a href="/register.html">
+                <i class="fas fa-user-plus text-success"></i>
+                <span>Registrarse</span>
+            </a>
+            <a href="/dashboard.html">
+                <i class="fas fa-chart-line text-info"></i>
+                <span>Mi Dashboard</span>
+            </a>
+            <a href="/admin.html">
+                <i class="fas fa-user-shield text-danger"></i>
+                <span>Panel Admin</span>
+            </a>
+            <a href="/verify.html">
+                <i class="fas fa-search text-warning"></i>
+                <span>Verificar Donación</span>
+            </a>
         </div>
-        <h2 class="mb-4">Campañas activas (demostración)</h2>
+
+        <h2 class="mb-4">Campañas activas</h2>
         
         <div class="campaign-row">
-            <div class="campaign-img d-flex align-items-center justify-content-center bg-secondary text-white">IMAGEN</div>
+            <div class="campaign-img d-flex align-items-center justify-content-center bg-secondary text-white">
+                <i class="fas fa-hospital fa-3x"></i>
+            </div>
             <div class="campaign-info">
                 <h4>Hospital Central</h4>
                 <p>Donaciones para equipamiento médico y camillas</p>
@@ -69,12 +120,14 @@
                 <small class="text-muted">Fin: 31/12/2026</small>
             </div>
             <div>
-                <button class="btn-donar" onclick="alert('Versión demostrativa. El sistema completo funciona con backend Node.js.')">DONAR</button>
+                <button class="btn-donar" onclick="alert('Versión demostrativa. DONAR')">DONAR</button>
             </div>
         </div>
 
         <div class="campaign-row">
-            <div class="campaign-img d-flex align-items-center justify-content-center bg-secondary text-white">IMAGEN</div>
+            <div class="campaign-img d-flex align-items-center justify-content-center bg-secondary text-white">
+                <i class="fas fa-paw fa-3x"></i>
+            </div>
             <div class="campaign-info">
                 <h4>Ayuda a Animales</h4>
                 <p>Esterilización y alimentación de animales callejeros</p>
@@ -82,22 +135,33 @@
                 <small class="text-muted">Fin: 30/06/2026</small>
             </div>
             <div>
-                <button class="btn-donar" onclick="alert('Versión demostrativa. El sistema completo funciona con backend Node.js.')">DONAR</button>
+                <button class="btn-donar" onclick="alert('Versión demostrativa. DONAR')">DONAR</button>
             </div>
         </div>
 
         <div class="campaign-row">
-            <div class="campaign-img d-flex align-items-center justify-content-center bg-secondary text-white">IMAGEN</div>
+            <div class="campaign-img d-flex align-items-center justify-content-center bg-secondary text-white">
+                <i class="fas fa-child fa-3x"></i>
+            </div>
             <div class="campaign-info">
                 <h4>Prótesis para niños</h4>
                 <p>Recaudación para prótesis de niños de bajos recursos</p>
                 <small class="text-muted">Inicio: 15/06/2026</small>
             </div>
             <div>
-                <button class="btn-donar" onclick="alert('Versión demostrativa. El sistema completo funciona con backend Node.js.')">DONAR</button>
+                <button class="btn-donar" onclick="alert('Versión demostrativa. DONAR')">DONAR</button>
             </div>
         </div>
     </div>
+
+    <footer class="text-center mt-5 py-3 bg-light">
+        <p>DONA-CHAIN &copy; 2026 - Transparencia y trazabilidad con blockchain</p>
+        <p>
+            <a href="/verify.html">Verificar donación</a> | 
+            <a href="/index.html">Campañas activas</a> |
+            <a href="/dashboard.html">Mi Dashboard</a>
+        </p>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
