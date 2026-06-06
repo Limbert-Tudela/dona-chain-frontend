@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #eef2f3; /* Fondo general ligeramente azulado */
+}
+nav {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a {
+    color: white;
+    margin-left: 1rem;
+    text-decoration: none;
+}
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #fef7e0; /* Color crema suave (reemplaza el blanco) */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.card {
+    background: #ffffff; /* Tarjetas blancas para contraste sobre el fondo crema */
+    padding: 1rem;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+input, select, textarea, button {
+    display: block;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 400px;
+}
+button {
+    background: #27ae60;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background: #2ecc71;
+}
